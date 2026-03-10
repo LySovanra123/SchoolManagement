@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SchoolMangaement.Models;
 using SchoolMangaement.Pattern;
 
 namespace SchoolMangaement
@@ -21,6 +22,8 @@ namespace SchoolMangaement
 
         private SqlConnection con = Singleton.Instance.GetConnection();
         private TemplateClass _service = new StudentEvent(new EventAction());
+        private PersonFactory _factory = new PersonFactory();
+        private IPerson _person;
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -37,18 +40,16 @@ namespace SchoolMangaement
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
-            SqlCommand cnn = new SqlCommand("insert into students values(@StudentName,@DateOfBirth,@Gender,@Phone,@Email,@Actice)", con);
-            cnn.Parameters.AddWithValue("@StudentId", int.Parse(textBox1.Text));
-            cnn.Parameters.AddWithValue("@StudentName", textBox2.Text);
-            cnn.Parameters.AddWithValue("@Dob", dateTimePicker1.Value);
-            cnn.Parameters.AddWithValue("@Gender", textBox3.Text);
-            cnn.Parameters.AddWithValue("@Phone", textBox4.Text);
-            cnn.Parameters.AddWithValue("@Email", textBox5.Text);
-            cnn.Parameters.AddWithValue("@Actice", "true");
-            cnn.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Record Save Succesfully", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            StudentModel student = new StudentModel
+            {
+                Name = textBox2.Text,
+                DateOfBirth = dateTimePicker1.Value,
+                Gender = textBox3.Text,
+                PhoneNumber = textBox4.Text,
+                Email = textBox5.Text
+            };
+            _person = _factory.CreatePerson("Student");
+            _person.save(student);
 
         }
 
@@ -59,28 +60,30 @@ namespace SchoolMangaement
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-    
-            SqlCommand cnn = new SqlCommand("update students set StudentName=@StudentName,DateOfBirth=@dob,Gender=@gender,Phone=@phone,Email=@email where Id=@studentid", con);
-            cnn.Parameters.AddWithValue("@StudentId", int.Parse(textBox1.Text));
-            cnn.Parameters.AddWithValue("@StudentName", textBox2.Text);
-            cnn.Parameters.AddWithValue("@Dob", dateTimePicker1.Value);
-            cnn.Parameters.AddWithValue("@Gender", textBox3.Text);
-            cnn.Parameters.AddWithValue("@Phone", textBox4.Text);
-            cnn.Parameters.AddWithValue("@Email", textBox5.Text);
-            cnn.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Record Updated Succesfully", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            StudentModel student = new StudentModel
+            {
+                Id = int.Parse(textBox1.Text),
+                Name = textBox2.Text,
+                DateOfBirth = dateTimePicker1.Value,
+                Gender = textBox3.Text,
+                PhoneNumber = textBox4.Text,
+                Email = textBox5.Text
+            };
+            _person = _factory.CreatePerson("Student");
+            _person.update(student);
+         
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            StudentModel student = new StudentModel
+            {
+                Id = int.Parse(textBox1.Text)       
+            };
+            _person = _factory.CreatePerson("Student");
+            _person.delete(student);
 
-            SqlCommand cnn = new SqlCommand("delete students where Id=@studentid", con);
-            cnn.Parameters.AddWithValue("@StudentId", int.Parse(textBox1.Text));
-
-            cnn.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Record Deleted Succesfully", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
 
@@ -113,6 +116,11 @@ namespace SchoolMangaement
         private void btnSearch_Click(object sender, EventArgs e)
         { 
             dataGridView1.DataSource = _service.search("select * from students where Id",int.Parse(textBox1.Text));
+        }
+
+        public static explicit operator Student(Persons v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

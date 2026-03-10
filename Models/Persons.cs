@@ -11,7 +11,7 @@ namespace SchoolMangaement.Models
         Student,
         Teacher
     }
-    public class Person
+    public class Persons
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -19,11 +19,11 @@ namespace SchoolMangaement.Models
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
     }
-    public class Student : Person
+    public class StudentModel : Persons
     {
         public DateTime DateOfBirth { get; set; }
     }
-    public class Teacher : Person
+    public class TeacherModel : Persons
     {
         public string Section { get; set; }
     }
