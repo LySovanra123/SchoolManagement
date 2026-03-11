@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Github\\GitHub\\C#\\SchoolManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|d:\\github\\github\\c#\\schoolmanagement\\pattern\\templatemethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|solutionrelative:pattern\\templatemethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|d:\\github\\github\\c#\\schoolmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|d:\\github\\github\\c#\\schoolmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T09:22:41.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T09:22:39.387Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TemplateMethod.cs",
+              "DocumentMoniker": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Pattern\\TemplateMethod.cs",
+              "RelativeDocumentMoniker": "Pattern\\TemplateMethod.cs",
+              "ToolTip": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Pattern\\TemplateMethod.cs",
+              "RelativeToolTip": "Pattern\\TemplateMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T09:08:22.401Z",
+              "EditorCaption": ""
             }
           ]
         }
