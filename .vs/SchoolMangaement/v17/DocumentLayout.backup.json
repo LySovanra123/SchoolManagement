@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Github\\GitHub\\C#\\SchoolManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|d:\\github\\github\\c#\\schoolmanagement\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|solutionrelative:attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|d:\\github\\github\\c#\\schoolmanagement\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|solutionrelative:attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|d:\\github\\github\\c#\\schoolmanagement\\pattern\\statepattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|solutionrelative:pattern\\statepattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|d:\\github\\github\\c#\\schoolmanagement\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|d:\\github\\github\\c#\\schoolmanagement\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F654508A-180B-47D4-9224-CC6185B6E545}|SchoolMangaement.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Attendance.cs",
+              "RelativeDocumentMoniker": "Attendance.cs",
+              "ToolTip": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Attendance.cs*",
+              "RelativeToolTip": "Attendance.cs*",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAnwEkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T07:48:22.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Attendance.cs [Design]",
+              "DocumentMoniker": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Attendance.cs",
+              "RelativeDocumentMoniker": "Attendance.cs",
+              "ToolTip": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Attendance.cs [Design]*",
+              "RelativeToolTip": "Attendance.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T07:48:20.75Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Main.cs*",
+              "RelativeToolTip": "Main.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T07:25:57.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Main.cs [Design]*",
+              "RelativeToolTip": "Main.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T07:25:52.815Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatePattern.cs",
+              "DocumentMoniker": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Pattern\\StatePattern.cs",
+              "RelativeDocumentMoniker": "Pattern\\StatePattern.cs",
+              "ToolTip": "D:\\Github\\GitHub\\C#\\SchoolManagement\\Pattern\\StatePattern.cs*",
+              "RelativeToolTip": "Pattern\\StatePattern.cs*",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwEUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T21:00:45.644Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -31,7 +31,7 @@ namespace SchoolMangaement
             DataTable dt = new DataTable();
             da.Fill(dt);
             if(dt.Rows.Count > 0) 
-            { 
+            {
                 Main mn = new Main();
                 mn.Show();
             }

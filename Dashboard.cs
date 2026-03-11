@@ -98,8 +98,9 @@ namespace SchoolMangaement
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            Main mn  = new Main();
-            mn.Show();
+            ChangeState cs = new ChangeState();
+            cs.SetState(new ConcreteStateMain());
+            cs.Request();
         }
     }
 }

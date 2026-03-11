@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SchoolMangaement.Pattern;
 
 namespace SchoolMangaement
 {
@@ -16,54 +17,55 @@ namespace SchoolMangaement
         {
             InitializeComponent();
         }
+        private ChangeState cs = new ChangeState();
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            Student st = new Student();
-            st.Show();
+            cs.SetState(new ConcreteStateStudent());
+            cs.Request();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-            Subject sj = new Subject();
-            sj.Show();
+            cs.SetState(new ConcreteStateSubject());
+            cs.Request();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
-            Teacher tr = new Teacher();
-            tr.Show();
+            cs.SetState(new ConcreteStateTeacher());
+            cs.Request();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-            Section sn = new Section();
-            sn.Show();
+            cs.SetState(new ConcreteStateSection());
+            cs.Request();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
-            Enrollment en = new Enrollment();
-            en.Show();
+            cs.SetState(new ConcreteStateEnrollment());
+            cs.Request();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             this.Close();
-            Attendance ae = new Attendance();
-            ae.Show();
+            cs.SetState(new ConcreteStateAttendance());
+            cs.Request();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             this.Close();
-            Dashboard dd= new Dashboard();
-            dd.Show();
+            cs.SetState(new ConcreteStateDashboard());
+            cs.Request();
         }
 
         private void Main_Load(object sender, EventArgs e)
